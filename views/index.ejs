@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/surveyform_style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/submit-form" method="post">
+            <label for="name">Your Name: </label>
+            <input type="text" name="name" id="name">
+
+            <label for="location">Dojo Location: </label>
+            <select name="location" id="location">
+                <option value="Philippines">Philippines</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Malaysia">Malaysia</option>
+            </select>
+
+            <label for="language">Favorite Language: </label>
+            <select name="language" id="language">
+                <option value="Javascript">Javascript</option>
+                <option value="PHP">PHP</option>
+                <option value="Java">Java</option>
+            </select>
+            
+            <label for="comment">Comment(optional): </label>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="result_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submitted Information</h1>
+        <p>Name: <span><%= ninja.name %></span></p>
+        <p>Dojo Location: <span><%= ninja.location %></span></p>
+        <p>Favorite Language: <span><%= ninja.language %></span></p>
+        <p>Comment: <span><%= ninja.comment %></span></p>
+
+        <!-- <a href="/">Go back</a> -->
+        <form action="/go-back" method="post">
+            <input type="submit" value="Go back">
+        </form>
+    </div>
+</body>
+</html>
